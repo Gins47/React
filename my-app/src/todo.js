@@ -10,6 +10,10 @@ function Todo(props) {
     setModelOpen(true);
   }
 
+  function closeModel() {
+    setModelOpen(false);
+  }
+
   return (
     <div className="todo_card">
       <h2>{props.text}</h2>
@@ -18,8 +22,8 @@ function Todo(props) {
           DELETE
         </button>
       </div>
-      {isModel && <Backdrop />}
-      {isModel && <Model />}
+      {isModel && <Backdrop show={closeModel} />}
+      {isModel && <Model show={closeModel} />}
     </div>
   );
 }
