@@ -1,0 +1,13 @@
+.Card{
+    margin-left: 25%;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    width: 50%;
+    height: auto;
+    align-items: center;
+}
+.Media {
+    height: 300px;
+    width:auto;
+    padding: 20px 20px
+  }
